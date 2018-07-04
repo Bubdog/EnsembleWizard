@@ -1,0 +1,169 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
+	color:#333;
+	background:#99bbb294;
+}
+
+a{
+	color:#abbfb5;
+	text-decoration: none;
+}
+
+h1{
+	text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.scroll-inner-tops{
+	width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    float: none;
+    margin: 0 auto;
+}
+
+.scroll-inner-tops img{
+	display:none;
+	    width: 40%;
+    height: auto;
+}
+
+
+.scroll-outer-tops {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    float: none;
+    width: 100%;
+    position: relative;
+}
+
+.scroll-inner-tops img.activeTop{
+	display:inline-block;
+}
+
+.scroll-inner-bottoms{
+	 width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    float: none;
+    margin: 0 auto;
+}
+
+.scroll-inner-bottoms img{
+	display:none;
+	    width: 40%;
+    height: auto;
+}
+
+.scroll-outer-bottoms {
+     margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    float: none;
+    position: relative;
+    width: 100%;
+}
+.scroll-inner-bottoms img.activeBottoms{
+	display:inline-block;
+}
+
+.scroll-inner-shoes{
+	 width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    float: none;
+    margin: 0 auto;
+}
+
+.scroll-inner-shoes img{
+	display:none;
+	 width: 40%;
+    height: auto;
+}
+
+.scroll-outer-shoes {
+        margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    float: none;
+    position: relative;
+    width: 100%;
+}
+
+.scroll-inner-shoes img.activeShoes{
+	display:inline-block;
+}
+
+.prevTop,.nextTop{
+	cursor: pointer;
+}
+
+.prevBottoms,.nextBottoms{
+	float:left;
+	margin-bottom:130px;
+	cursor: pointer;
+}
+
+.prevShoes,.nextShoes{
+	float:left;
+	margin-bottom:130px;
+	cursor: pointer;
+}
+
+.saveEnsemble{
+	float:left;
+	margin-bottom:130px;
+	cursor: pointer;
+}
+.prevTop,.prevBottoms,.prevShoes{
+	position: absolute;
+    z-index: 100;
+    left: 31%;
+    top: 43%;
+    margin: 0 auto;
+}
+
+.nextTop,.nextBottoms,.nextShoes{
+	    position: absolute;
+    z-index: 100;
+    right: 31%;
+    top: 43%;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 500px) {
+
+
+.scroll-inner-tops, .scroll-inner-bottoms, .scroll-inner-shoes {
+    width: 100%;
+}
+
+.prevTop, .prevBottoms, .prevShoes {
+	left: 20%;
+}
+
+.nextTop, .nextBottoms, .nextShoes {
+	right: 20%;
+}
+
+}
