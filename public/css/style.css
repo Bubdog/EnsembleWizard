@@ -128,11 +128,6 @@ p {
 	cursor: pointer;
 }
 
-.saveEnsemble{
-	float:left;
-	margin-bottom:130px;
-	cursor: pointer;
-}
 .prevTop,.prevBottoms,.prevShoes{
 	position: absolute;
     z-index: 100;
@@ -149,7 +144,19 @@ p {
     margin: 0 auto;
 }
 
-
+.saveEnsemble {
+    background: white;
+    border: 1px solid;
+    font-weight: bold;
+    padding: 10px 20px;
+    float: none;
+    margin: 0 auto 60px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 250px;
+    font-size: 16px;
+}
 
 @media (max-width: 500px) {
 
