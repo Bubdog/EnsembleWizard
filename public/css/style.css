@@ -146,7 +146,6 @@ p {
 
 .saveEnsemble {
     background: white;
-    border: 1px solid;
     font-weight: bold;
     padding: 10px 20px;
     float: none;
@@ -156,6 +155,45 @@ p {
     text-align: center;
     width: 250px;
     font-size: 16px;
+}
+
+a.remove {
+    background: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    float: none;
+    margin: 30px auto 0px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+.closet img {
+    width: 100%;
+    height: auto;
+    max-height: 375px;
+    margin: 0 auto;
+}
+
+.closet {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.saved-outfit {
+    border: 2px solid;
+    width: 25%;
+    padding: 40px 30px;
+}
+
+i.fa.fa-times {
+    color: #ea7171;
+    margin-right: 6px;
+    font-size: 18px;
 }
 
 @media (max-width: 500px) {
