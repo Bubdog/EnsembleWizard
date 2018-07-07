@@ -22,7 +22,7 @@ p {
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .scroll-inner-tops{
@@ -42,7 +42,7 @@ p {
 
 
 .scroll-outer-tops {
-    margin: 0 auto;
+    margin: 35px auto 0;
     text-align: center;
     overflow: hidden;
     display: block;
@@ -99,7 +99,7 @@ p {
 }
 
 .scroll-outer-shoes {
-        margin: 0 auto;
+        margin: 0 auto 35px;
     text-align: center;
     overflow: hidden;
     display: block;
@@ -151,14 +151,84 @@ p {
     float: none;
     margin: 0 auto 60px;
     cursor: pointer;
-    display: block;
     text-align: center;
     width: 250px;
     font-size: 16px;
+    display: block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.saveEnsemble:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 15px);
+    top: 0px;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent white transparent;
+}
+
+.saveEnsemble:hover {
+    text-decoration: none;
+    color: #40d840;
+}
+
+.saveEnsemble:hover:before, 
+.saveEnsemble:focus:before, 
+.saveEnsemble:active:before {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+.saveEnsemble i {
+    color: #40d840;
+    margin-right: 5px;
+}
+
+.backto {
+    color: #333;
+    font-size: 16px;
+}
+
+a.backto.right.hvr-icon-wobble-horizontal {
+    width: 100%;
+    text-align: right;
+}
+
+a.backto.right.hvr-icon-wobble-horizontal:hover,
+a.backto.hvr-icon-wobble-horizontal:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.hvr-shutter-in-vertical:before {
+    background: white;
+}
+
+.hvr-shutter-in-vertical:active, 
+.hvr-shutter-in-vertical:focus, 
+.hvr-shutter-in-vertical:hover {
+    text-decoration: none;
+}
+
+.hvr-shutter-in-vertical:active .fa, 
+.hvr-shutter-in-vertical:focus .fa, 
+.hvr-shutter-in-vertical:hover .fa {
+    color: white;
 }
 
 a.remove {
-    background: white;
+    background: #ea7171;
     font-weight: bold;
     padding: 10px 20px;
     float: none;
