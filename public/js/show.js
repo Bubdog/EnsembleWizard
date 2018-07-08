@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function ShowEnsembles() {
     var closet = JSON.parse(localStorage.getItem("SavedEnsembles"));
     let collectionsDivText = "";
@@ -56,5 +55,4 @@ function ShowEnsembles() {
     document.getElementById('collections').innerHTML = collectionsDivText;
 
     var i = 1; // this is just here to put a breakpoint
->>>>>>> 8928e9a46db6ca3e97f473c4d8bfc12daec69bdb
 };
