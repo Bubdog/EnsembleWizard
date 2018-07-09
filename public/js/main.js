@@ -161,10 +161,27 @@ $(document).ready(function () {
 
       // Get the last "id" so that we can increment it for the next save
       var ensembleId = 1;
+      var duplicateSave = false;
       for (item in savedEnsembles.ensembles) {
         ensembleId = parseInt(savedEnsembles.ensembles[item].id, 10);
+        var storedTop = savedEnsembles.ensembles[item].top.replace(/^.*[\\\/]/, '');
+        var storedBottoms = savedEnsembles.ensembles[item].bottoms.replace(/^.*[\\\/]/, '');
+        var storedShoes = savedEnsembles.ensembles[item].shoes.replace(/^.*[\\\/]/, '');
+        var shoesToStore = shoesImageSrc.replace(/^.*[\\\/]/, '');
+        var bottomsToStore = bottomsImageSrc.replace(/^.*[\\\/]/, '');
+        var topToStore = topImageSrc.replace(/^.*[\\\/]/, '');
+
+        if ((storedTop == topToStore) && (storedBottoms == bottomsToStore) && (storedShoes == shoesToStore)) {
+          duplicateSave = true;
+          break;
+        }
       }
 
+      if (duplicateSave) {
+        // if you want to alert the operator that a duplicate save was attempted then do it here
+        //alert("duplicate");
+        return false;
+      }
       // Now add the current ensemble to the Json array just pulled from local storage along with the incremented "id"
       ensembleImageFiles.map(function (item) {
         savedEnsembles.ensembles.push({
